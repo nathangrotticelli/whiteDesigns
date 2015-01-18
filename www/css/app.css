@@ -1410,19 +1410,24 @@ html {
 .loginTxt{
     padding-top:25%;
     font-size: 21px;
-    color:#5a5a5a;
+    color:#141414;
+      /*opacity: .8;*/
     /*position: absolute;*/
     /*font-weight: bolder;*/
         /*border-bottom: none;*/
 }
 .loginX{
 
-    margin-top:95%;
-    font-size: 110px;
-    color:#5a5a5a;
-    padding-left: 4%;
+    /*margin: auto!important;*/
+    margin-top:95%!important;
+    margin-left: 5%;
+    text-align: center!important;
+    font-size: 105px;
+    color:#141414;
+    /*padding-left: 5%;*/
+    opacity: .8;
     /*position: absolute;*/
-    /*font-weight: light;*/
+    font-weight: 900;
         /*border-bottom: none;*/
 }
 
@@ -1448,7 +1453,8 @@ html {
   /*transition: opacity linear 1500ms;*/
   text-align: center;
   background-color: #ecf0f1;
-  opacity: .9;
+  opacity: 1;
+  width: auto!important;
   /*height: 100%!important;*/
   /*z-index: 999;*/
 
@@ -1634,7 +1640,7 @@ html {
   #shopListBack{
  /*margin: 5%;*/
   /*margin-top: 0;*/
-  margin-top: 19.5%;
+  margin-top: 20%;
   /*padding-bottom: 10%;*/
   /*bottom: 0%;*/
   background-color: #141414;
