@@ -6564,9 +6564,9 @@ $ios-transition-box-shadow-start: -200px 0px 200px rgba(0,0,0,0), -5px 0px 5px r
 $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px rgba(0,0,0,0.18);
 */
 .slide-ios > .ng-enter, .slide-ios.ng-enter, .slide-ios > .ng-leave, .slide-ios.ng-leave, .slide-left-right-ios7 > .ng-enter, .slide-left-right-ios7.ng-enter, .slide-left-right-ios7 > .ng-leave, .slide-left-right-ios7.ng-leave, .slide-right-left-ios7.reverse > .ng-enter, .slide-right-left-ios7.reverse.ng-enter, .slide-right-left-ios7.reverse > .ng-leave, .slide-right-left-ios7.reverse.ng-leave {
-  -webkit-transition: all cubic-bezier(0.4, 0.6, 0.2, 1) 400ms;
-  -moz-transition: all cubic-bezier(0.4, 0.6, 0.2, 1) 400ms;
-  transition: all cubic-bezier(0.4, 0.6, 0.2, 1) 400ms;
+  -webkit-transition: all cubic-bezier(0.4, 0.6, 0.2, 1) 739ms;
+  -moz-transition: all cubic-bezier(0.4, 0.6, 0.2, 1) 739ms;
+  transition: all cubic-bezier(0.4, 0.6, 0.2, 1) 739ms;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -6595,9 +6595,9 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   transform: translate3d(-20%, 0, 0); }
 
 .slide-ios.reverse > .ng-enter, .slide-ios.reverse.ng-enter, .slide-ios.reverse > .ng-leave, .slide-ios.reverse.ng-leave, .slide-left-right-ios7.reverse > .ng-enter, .slide-left-right-ios7.reverse.ng-enter, .slide-left-right-ios7.reverse > .ng-leave, .slide-left-right-ios7.reverse.ng-leave, .slide-right-left-ios7 > .ng-enter, .slide-right-left-ios7.ng-enter, .slide-right-left-ios7 > .ng-leave, .slide-right-left-ios7.ng-leave {
-  -webkit-transition: all cubic-bezier(0.4, 0.6, 0.2, 1) 400ms;
-  -moz-transition: all cubic-bezier(0.4, 0.6, 0.2, 1) 400ms;
-  transition: all cubic-bezier(0.4, 0.6, 0.2, 1) 400ms;
+  -webkit-transition: all cubic-bezier(0.4, 0.6, 0.2, 1) 739ms;
+  -moz-transition: all cubic-bezier(0.4, 0.6, 0.2, 1) 739ms;
+  transition: all cubic-bezier(0.4, 0.6, 0.2, 1) 739ms;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -6644,9 +6644,9 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   box-shadow: none; }
 
 .slide-full > .ng-enter, .slide-full.ng-enter, .slide-full > .ng-leave, .slide-full.ng-leave {
-  -webkit-transition: all ease-in-out 400ms;
-  -moz-transition: all ease-in-out 400ms;
-  transition: all ease-in-out 400ms;
+  -webkit-transition: all ease-in-out 739ms;
+  -moz-transition: all ease-in-out 739ms;
+  transition: all ease-in-out 739ms;
   position: absolute;
   top: 0;
   right: -1px;

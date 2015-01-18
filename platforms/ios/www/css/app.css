@@ -123,8 +123,8 @@
 @-webkit-keyframes faderInto { 0% {opacity: 0;} 100% {opacity: 1;} }
 
 #main{
-      -webkit-animation: faderInto .5s;
-      opacity: 1:;
+      /*-webkit-animation: faderInto .5s;*/
+      /*opacity: 1:;*/
 }
 .prof-image2{
     position: absolute;
@@ -1999,12 +1999,12 @@ button{
   color:#00EEEE!important;
   border: 2px solid #00EEEE!important;
 }
-.ng-enter img {
+/*.ng-enter img {
     opacity: 0;
   }
  img {
-    transition: opacity linear 240ms;
-}
+    /*transition: opacity linear 240ms;*/
+/*}*/
 
 
 /*  .ng-enter .swipe-card{
