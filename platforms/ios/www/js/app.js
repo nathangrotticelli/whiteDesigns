@@ -83,7 +83,7 @@ angular.module('sociogram', ['ionic', 'openfb','objectFilters','sociogram.contro
                       views: {
                         'loginPrompt': {
                           templateUrl: 'templates/loginPrompt.html',
-                          controller: "LoginCtrl"
+                          controller: "BackCtrl"
                         }
                       }
                   })

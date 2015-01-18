@@ -3,7 +3,17 @@ angular.module('sociogram.controllers', ['ionic'])
   //for side menu
   .controller('AppCtrl', function ($scope, $state,$location,PetService, OpenFB, $timeout) {
 
-      $scope.main={};
+      // $scope.main={};
+      // alert($state.current.name);
+      // $scope.main.tabs = false;
+      $scope.shouldHide = function () {
+        if($state.current.name=='app.loginPrompt') {
+                return true;
+        }
+        else{
+          return false;
+        }
+    }
       // $scope.main.dragContent = true;
       // $scope.main.backBtn = false;
 
@@ -83,16 +93,28 @@ angular.module('sociogram.controllers', ['ionic'])
 
   })
 .controller('BackCtrl', function ($scope, $ionicPlatform, $ionicNavBarDelegate, $ionicScrollDelegate, $ionicPopup, $http, $location, $ionicLoading ,OpenFB, $state, $stateParams, PetService) {
+
+
     $scope.goBack = function(){
          // PetService.setSingleView(false);
          // alert("here");
          // PetService.setSingleView(false);
          // alert("here");
+         $event.stopPropagation();
           $ionicNavBarDelegate.back();
           // alert("here");
           // $ionicNavBarDelegate.showBackButton(false);
           // $scope.main.backBtn = false;
     };
+    $scope.closeMe = function(){
+        // alert('here');
+        // $event.stopPropagation();
+        $ionicNavBarDelegate.back();
+
+        // $scope.goBack();
+              // alert($ionicHistory.backView());
+      };
+
 
   }) // end of back controller
 
@@ -104,10 +126,10 @@ $scope.goAmazon = function(link){
 };
 
 $scope.goCat = function(link){
-    // PetService.setShopSingle($scope.watchEx);
+        // PetService.setShopSingle($scope.watchEx);
          // $scope.main.backBtn = false;
-          $state.go("app.shopDetail");
-       // $location.path('/app/shopDetail');
+          // $state.go("app.shopDetail");
+       $location.path('/app/shopDetail');
 };
 
      $scope.refreshWatches = function(){
@@ -192,8 +214,9 @@ $scope.goCat = function(link){
 // $scope.setTabs = function(){}
 
       $scope.loginPrompt = function() {
+
            $location.path('/app/loginPrompt');
-             PetService.setTabs(false);
+             // PetService.setTabs(false);
              StatusBar.styleDefault();
 
 //this is lagging, why?
@@ -207,7 +230,7 @@ $scope.goCat = function(link){
 
     if(PetService.getSingleView()==true){
       $location.path('/app/event-detail');
-       $scope.main.backBtn = true;
+       // $scope.main.backBtn = true;
     }
     else{
       // PetService.setBack(false);
@@ -282,16 +305,16 @@ $scope.goCat = function(link){
 
     // $scope.noPop='false';
     // queryGo=false;
-      $scope.main.dragContent = false;
-      $scope.main.tabs = PetService.getTabs();
+      // $scope.main.dragContent = false;
+      // $scope.main.tabs = true;
+      // $scope.main.tabs = PetService.getTabs();
       // $scope.main.backBtn = PetService.getBack();
 
-      PetService.setTabs(true);
+      // PetService.setTabs(true);
        // PetService.setBack(false);
       // $ionicScrollDelegate.scrollTop(false);
      // $scope.singleView = PetService.getSingleView();
      $scope.singleWatch = PetService.getSingle();
-
 
       $scope.singleShopWatch = PetService.getSingle();
 
