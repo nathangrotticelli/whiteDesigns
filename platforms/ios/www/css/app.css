@@ -851,10 +851,13 @@ padding: 0;
 /*border: 1px solid gray;*/
 /*border-top: 0px;*/
 }
-
+.shopFull{
+    -webkit-animation: faderInto .8s;
+}
 /*color:#bbbdbb;#8DEEEE color:#BADA55; color:#0ff1ce; color:#20c2ff;*/
 .mesh{
   background-color: #ecf0f1;
+    -webkit-animation: faderInto .8s;
   /*opacity: .9;*/
   /*-webkit-animation: show 1.2s 1;*/
   /*background-image: url("../images/outsideMesh.png");*/
@@ -1369,12 +1372,12 @@ html {
   /*opacity: 0;*/
   /*-webkit-animation: show 1.35s;*/
   /*-webkit-animation: 3.35s;*/
-  /*-webkit-transition: linear 1500ms;*/
-  /*transition: opacity linear 1500ms;*/
+
   text-align: center;
   background-color: #ecf0f1;
   opacity: 1;
   width: auto!important;
+    -webkit-animation: faderInto 1s;
   /*height: 100%!important;*/
   /*z-index: 999;*/
 
@@ -1986,7 +1989,7 @@ button{
   /*vertical-align: center;*/
   /*top:-50px;*/
   z-index: 999!important;
-  -webkit-animation: faderInto .7s;
+  -webkit-animation: faderInto 2.3s;
   /*display: inline!important;*/
   /*border:6px solid black;*/
   /*border-bottom: thick double;*/
