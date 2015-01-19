@@ -92,7 +92,7 @@ angular.module('sociogram.controllers', ['ionic'])
 
 
   })
-.controller('BackCtrl', function ($scope, $ionicPlatform, $ionicNavBarDelegate, $ionicScrollDelegate, $ionicPopup, $http, $location, $ionicLoading ,OpenFB, $state, $stateParams, PetService) {
+.controller('BackCtrl', function ($scope, $ionicModal, $ionicPlatform, $ionicNavBarDelegate, $ionicScrollDelegate, $ionicPopup, $http, $location, $ionicLoading ,OpenFB, $state, $stateParams, PetService) {
 
 
     $scope.goBack = function(){
@@ -114,6 +114,38 @@ angular.module('sociogram.controllers', ['ionic'])
         // $scope.goBack();
               // alert($ionicHistory.backView());
       };
+       $ionicModal.fromTemplateUrl('my-modal.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+       $scope.joinDimepiece = function(){
+        $scope.modal.show();
+
+      };
+
+
+
+  //     $scope.openModal = function() {
+
+  // };
+  $scope.closeLogin = function() {
+    $scope.modal.hide();
+  };
+  //Cleanup the modal when we're done with it!
+  $scope.$on('$destroy', function() {
+    $scope.modal.remove();
+  });
+  // Execute action on hide modal
+  $scope.$on('modal.hidden', function() {
+    // Execute action
+  });
+  // Execute action on remove modal
+  $scope.$on('modal.removed', function() {
+    // Execute action
+  });
 
 
   }) // end of back controller
