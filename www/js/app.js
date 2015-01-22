@@ -20,6 +20,10 @@ angular.module('sociogram', ['ionic', 'openfb','objectFilters','sociogram.contro
 
 // alert(wino);
   $ionicPlatform.ready(function () {
+      if(window.cordova.plugins.Keyboard) {
+         cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+         cordova.plugins.Keyboard.disableScroll(true);
+       }
             if (window.StatusBar) {
               // alert('ere');
                 // StatusBar.hide();

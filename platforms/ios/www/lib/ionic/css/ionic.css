@@ -5071,12 +5071,10 @@ input, button, select, textarea {
   color: #444;
   font-size: 16px; }
 
-.placeholder-icon {
-  color: #aaa; }
   .placeholder-icon:first-child {
-    padding-right: 6px; }
+    padding-right: 18px; }
   .placeholder-icon:last-child {
-    padding-left: 6px; }
+    padding-left: 18px; }
 
 .item-stacked-label {
   display: block;
@@ -7598,7 +7596,8 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
  * --------------------------------------------------
  */
 .padding {
-  padding: 10px; }
+  padding: 10px;
+  padding-top: 25px;}
 
 .padding-top, .padding-vertical {
   padding-top: 10px; }

@@ -639,30 +639,78 @@ padding: 0;
   /*display: inline;*/
   /*padding:2%;*/
 }
-.profSpot{
-  /*width: 50px;*/
-  /*height: 50px;*/
-  /*text-align: center!important;*/
-  position: absolute;
-  top: 15%;
-  /*text-align: center!im*/
-  margin-left:38%;
-  font-size: 90px;
-  color:gray;
-  /*margin: auto!important;*/
-}
 
 #re1{
   color:white!important;
 }
 
 .signUpText{
-  font-size: 18px!important;
+  /*font-size: 18px!important;*/
   padding-bottom: 4%;
   /*height: 50!important;*/
   /*font-weight: bold;*/
   /*font-variant: c*/
   /*padding-bottom: 1%;*/
+}
+.signInContent{
+  /*text-decoration: underline;*/
+  /*position: absolute;*/
+  margin-top: 25%;
+  text-align: center!important;
+
+      /*border-left-width: 0;*/
+    /*border-right-width: 0;*/
+  /*margin-left:38%;*/
+  /*font-size: 90px;*/
+  /*color:gray;*/
+}
+*::-webkit-input-placeholder {
+  /*margin-top: 10%!impxortant;*/
+  font-size:18px;
+}
+*:-moz-placeholder {
+    font-size:18px;
+}
+*:-ms-input-placeholder { /* IE10+ */
+    font-size:18px;
+}
+.placeholder-icon {
+  color: #2a4759;
+  font-size: 23px;
+  /*padding-right: 5%;*/
+  opacity: .85;
+}
+/*.signInContent i{
+  color:#141414;
+}*/
+.shopFull .item{
+    border:none;
+}
+.createAccount{
+    color: #22A7F0!important;
+      /*text-decoration: none!important;*/
+      font-size: 15px;
+      /*margin-top: 10%!important;*/
+}
+
+.createAccount:active{
+  opacity: .4!important;
+  /*color:gray;*/
+}
+
+.profSpot{
+  /*width: 50px;*/
+  /*height: 50px;*/
+  /*text-align: center!important;*/
+  /*position: absolute;*/
+  /*top: 15%;*/
+  /*text-align: center!im*/
+  /*margin-left:38%;*/
+  font-size: 90px;
+  color:gray;
+ /*padding-bottom: 100px!important;*/
+ /*bottom: 100px!important;*/
+  /*margin: auto!important;*/
 }
 .topCancel{
   position: absolute;
@@ -1160,6 +1208,11 @@ html {
      /*background-color: #22A7F0!important;*/
 }
 .modal{
+  top:0!important;
+  /*height: auto!important;*/
+/*  overflow: auto;
+  overflow-scrolling: auto;
+  -webkit-overflow-scrolling: touch;*/
   /*opacity: .9;*/
    /*background-color: #ecf0f1;*/
 }
@@ -1501,9 +1554,7 @@ html {
   /*display: inline-block;*/
 }
 
-.item{
-    border:none;
-}
+
 
 .shopCat:active{
   /*background-color: gray;*/
@@ -1807,7 +1858,7 @@ html {
   padding-bottom:7%;
   /*margin-top: 2%;*/
 }
-.ion-item
+
 
 .wholeEventsPage .item{
   width: 100%;

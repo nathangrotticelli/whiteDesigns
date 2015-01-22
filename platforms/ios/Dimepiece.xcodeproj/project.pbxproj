@@ -56,6 +56,11 @@
 		C7A7A02584FF47239736B9C8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 103C573197414E1A963347E5 /* libz.dylib */; };
 		CE7D85DB51ED4A9A962FD85A /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61997B1CF9BF4E53B268F0B3 /* EventKitUI.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		76D651E811F54899A3CF5AF7 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C6F25226964D999AA9442B /* CDVNotification.m */; };
+		40C24C9983B348E3AC680757 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9D9E167B448F39975431C /* CDVNotification.bundle */; };
+		75072128709D4E789E040AD0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D422DE42DE4A68BCF74E75 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7F7D152DF20C4681A193D720 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEBC803E02246C2AA4DE448 /* IonicKeyboard.m */; };
+		AE4A5A33AE4F4CC285058AA6 /* UIWebViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2298DEE809094C4FB9D7A2F5 /* UIWebViewExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +159,14 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F667D9BAA267426383F2C30F /* CDVDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = org.apache.cordova.device/CDVDevice.h; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Dimepiece/config.xml"; sourceTree = "<group>"; };
+		D0C6F25226964D999AA9442B /* CDVNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVNotification.m"; path = "org.apache.cordova.dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		81BA48F53BE74F9BA64F0F00 /* CDVNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVNotification.h"; path = "org.apache.cordova.dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		6DA9D9E167B448F39975431C /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; };
+		C4D422DE42DE4A68BCF74E75 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		FCEBC803E02246C2AA4DE448 /* IonicKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "IonicKeyboard.m"; path = "com.ionic.keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		2298DEE809094C4FB9D7A2F5 /* UIWebViewExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIWebViewExtension.m"; path = "com.ionic.keyboard/UIWebViewExtension.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		54A3D750628B49859D347D94 /* IonicKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IonicKeyboard.h"; path = "com.ionic.keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A1855A6EE7854530B35E5250 /* UIWebViewExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIWebViewExtension.h"; path = "com.ionic.keyboard/UIWebViewExtension.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +189,7 @@
 				6FD266CE149543CF8AE8F7E3 /* EventKit.framework in Frameworks */,
 				CE7D85DB51ED4A9A962FD85A /* EventKitUI.framework in Frameworks */,
 				25EA74CBC39849E68D7CFE23 /* SystemConfiguration.framework in Frameworks */,
+				75072128709D4E789E040AD0 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +275,7 @@
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* Dimepiece-Info.plist */,
+				6DA9D9E167B448F39975431C /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = "Dimepiece/Resources";
@@ -283,6 +298,7 @@
 				266E5D6968FD436BAB097AB1 /* EventKit.framework */,
 				61997B1CF9BF4E53B268F0B3 /* EventKitUI.framework */,
 				5E35E2421AE14B069E64FA02 /* SystemConfiguration.framework */,
+				C4D422DE42DE4A68BCF74E75 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -318,6 +334,12 @@
 				70F89FAB7DCC4A42A62212E0 /* Calendar.h */,
 				6A9D7462979D46A5BF40604F /* CDVSplashScreen.m */,
 				59C449027A89493099786291 /* CDVSplashScreen.h */,
+				D0C6F25226964D999AA9442B /* CDVNotification.m */,
+				81BA48F53BE74F9BA64F0F00 /* CDVNotification.h */,
+				FCEBC803E02246C2AA4DE448 /* IonicKeyboard.m */,
+				2298DEE809094C4FB9D7A2F5 /* UIWebViewExtension.m */,
+				54A3D750628B49859D347D94 /* IonicKeyboard.h */,
+				A1855A6EE7854530B35E5250 /* UIWebViewExtension.h */,
 			);
 			name = Plugins;
 			path = "Dimepiece/Plugins";
@@ -487,6 +509,7 @@
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+				40C24C9983B348E3AC680757 /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +548,9 @@
 				620685FFAAD9446B837123E4 /* UniversalAnalyticsPlugin.m in Sources */,
 				BEA51B81E8B741CBA1DE55F7 /* Calendar.m in Sources */,
 				065AA02AACC44CB291394EF9 /* CDVSplashScreen.m in Sources */,
+				76D651E811F54899A3CF5AF7 /* CDVNotification.m in Sources */,
+				7F7D152DF20C4681A193D720 /* IonicKeyboard.m in Sources */,
+				AE4A5A33AE4F4CC285058AA6 /* UIWebViewExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

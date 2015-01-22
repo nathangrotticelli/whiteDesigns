@@ -22,20 +22,50 @@
    <script id="my-modal.html" type="text/ng-template">
 
    <div class="modal">
+
         <header class="bar bar-header bottomBordAdd" >
         <div class="topCancel" ng-click="closeLogin()">
         <p>Cancel</p>
         </div>
-
           <h1 class="title signUpText">Sign Up</h1>
-
         </header>
+
         <content has-header="true" padding="true">
-
+        <ion-scroll scrollbar-y="true" class="list signInContent">
         <a class="profSpot ion-image"></a>
+        <h1></h1>
 
+         <label class="item item-input" ><i class="icon ion-person placeholder-icon"></i>
+         <input type="text" ng-model="user.fullName" placeholder="Full Name" >
+         </label>
+
+            <label class="item item-input">
+              <i class="icon ion-at placeholder-icon"></i>
+              <input type="text" ng-model="user.username" placeholder="Username">
+            </label>
+             <label class="item item-input">
+              <i class="icon ion-email placeholder-icon"></i><input type="email" ng-model="user.email" placeholder="Email Address">
+            </label>
+
+            <label class="item item-input">
+              <i class="icon ion-locked placeholder-icon"></i>
+              <form ng-submit="createAccount(user.fullName,user.username,user.email,user.password)">
+              <input type="password" ng-model="user.password" placeholder="Password" >
+              </form>
+            </label>
+
+          <div class="padding">
+            <p class="text-center">
+
+              <a ng-click="createAccount(user.fullName,user.username,user.email,user.password)" class="createAccount">Create Account</a>
+            </p>
+          </div>
+
+           </ion-scroll>
         </content>
+
       </div>
+
 
 </script>
 

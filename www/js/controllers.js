@@ -92,6 +92,7 @@ angular.module('sociogram.controllers', ['ionic'])
 
 
   })
+
 .controller('BackCtrl', function ($scope, $ionicModal, $ionicPlatform, $ionicNavBarDelegate, $ionicScrollDelegate, $ionicPopup, $http, $location, $ionicLoading ,OpenFB, $state, $stateParams, PetService) {
 
 
@@ -114,17 +115,81 @@ angular.module('sociogram.controllers', ['ionic'])
         // $scope.goBack();
               // alert($ionicHistory.backView());
       };
-       $ionicModal.fromTemplateUrl('my-modal.html', {
-    scope: $scope,
-    animation: 'slide-in-up'
-  }).then(function(modal) {
-    $scope.modal = modal;
-  });
 
        $scope.joinDimepiece = function(){
         $scope.modal.show();
+        // cordova.plugins.Keyboard.show();
 
       };
+       $scope.createAccount = function(name,username,email,password){
+              // alert(window.Keyboard.hideKeyboardAccessoryBar());
+//add check for if name is taken
+        if(!name){
+          navigator.notification.alert(
+            "Full name can't be blank.",  // message
+            null,         // callback
+            "Couldn't Create Account"                 // buttonName
+          );
+        }
+        else if(name.length<2){
+          navigator.notification.alert(
+            'Full name is too short (minimum is 2 characters).',  // message
+            null,         // callback
+            "Couldn't Create Account"                 // buttonName
+          );
+        }
+       else if(!username){
+          navigator.notification.alert(
+            "Username can't be blank.",  // message
+            null,         // callback
+            "Couldn't Create Account"                 // buttonName
+          );
+        }
+        else if(username.length<2){
+          navigator.notification.alert(
+            'Username is too short (minimum is 2 characters).',  // message
+            null,         // callback
+            "Couldn't Create Account"                 // buttonName
+          );
+        }
+        else if(!email){
+          navigator.notification.alert(
+            'Please enter a valid email.',  // message
+            null,         // callback
+            "Couldn't Create Account"                 // buttonName
+          );
+        }
+        else if(!password){
+          navigator.notification.alert(
+            'You must have a password.',  // message
+            null,         // callback
+            "Couldn't Create Account"                 // buttonName
+          );
+        }
+        else{
+          alert('worked');
+        }
+        // alert(username);
+        // alert(email);
+        // alert(password);
+
+          //  $http.post('http://stark-eyrie-6720.herokuapp.com/userCreate',
+          // {username: username,
+          // // privateEvents: {},
+          // userFullName: fullName,
+          // userEmail: userEmail,
+          // userPassword: userPassword,
+          // likes: [],
+          // collections: [],
+          // userPic: userPic
+          // }
+          // ).then(function(){
+          //   $scope.modal.hide();
+          // });
+
+      };
+
+
 
 
 
@@ -145,6 +210,14 @@ angular.module('sociogram.controllers', ['ionic'])
   // Execute action on remove modal
   $scope.$on('modal.removed', function() {
     // Execute action
+  });
+
+$ionicModal.fromTemplateUrl('my-modal.html', {
+    scope: $scope,
+    animation: 'slide-in-up',
+    focusFirstInput: true
+  }).then(function(modal) {
+    $scope.modal = modal;
   });
 
 
